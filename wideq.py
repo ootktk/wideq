@@ -2355,7 +2355,7 @@ class WasherStatus(object):
 
     @property
     def current_course(self):
-        course = self.lookup_reference('APCourse')
+        course = self.lookup_reference('Course')
         if course == '-':
             return 'OFF'
         else:
@@ -2387,7 +2387,7 @@ class WasherStatus(object):
 
     @property
     def water_temp_option_state(self):
-        water_temp = self.lookup_enum('WaterTemp')
+        water_temp = self.lookup_enum('WTemp')
         if water_temp == '-':
             return 'OFF'
         return WASHERWATERTEMP(water_temp)
