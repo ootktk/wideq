@@ -103,6 +103,12 @@ STATE_DRY_LEVEL_MORE  = "Dry level more"
 STATE_DRY_LEVEL_NORMAL = "Dry level normal"
 STATE_DRY_LEVEL_VERY = "Dry level very"
 
+STATE_DRY_TEMP_ULTRA_LOW = "Dry Temp Ultra Low"
+STATE_DRY_TEMP_LOW = "Dry Temp Low"
+STATE_DRY_TEMP_MEDIUM = "Dry Temp Medium"
+STATE_DRY_TEMP_MID_HIGH = "Dry Temp Mid High"
+STATE_DRY_TEMP_HIGH = "Dry Temp High"
+
 STATE_ECOHYBRID_ECO  = "Ecohybrid eco"
 STATE_ECOHYBRID_NORMAL  = "Ecohybrid normal"
 STATE_ECOHYBRID_TURBO  = "Ecohybrid turbo"
