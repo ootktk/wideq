@@ -2158,6 +2158,13 @@ class DryerStatus(object):
         if drylevel == '-':
             return 'OFF'
         return DRYLEVEL(drylevel)
+
+    @property
+    def tempcontrol_state(self):
+        tempcontrol = self.lookup_enum('TempControl')
+        if tempcontrol == '-':
+            return 'OFF'
+        return TEMPCONTROL(tempcontrol)    
     
     @property
     def ecohybrid_state(self):
