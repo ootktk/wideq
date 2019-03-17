@@ -2382,10 +2382,14 @@ class WasherStatus(object):
     
     @property
     def initialtime_hour(self):
+	    if initialtime_hour == '-':
+            return 'OFF'
         return self.data['Initial_Time_H']
     
     @property
     def initialtime_min(self):
+	    if initialtime_min == '-':
+            return 'OFF'
         return self.data['Initial_Time_M']
 
     @property
